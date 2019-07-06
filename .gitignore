@@ -1,0 +1,5 @@
+db.*
+blog/__pycache__/
+blog/migrations/
+blogengine/__pycache__/
+blogengine/migrations/
