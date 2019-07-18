@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import PostDetail, TagDetail, \
+from .views import \
     posts_list, tags_list, \
+    PostDetail, TagDetail, \
     PostCreate, TagCreate, \
-    TagUpdate, PostUpdate
+    PostUpdate, TagUpdate \
 
 
 urlpatterns = [

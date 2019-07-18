@@ -5,8 +5,7 @@ from django.utils.text import slugify
 
 
 def gen_slug(s):
-    return slugify(s, allow_unicode=True) + \
-        '-' + str(int(time()))
+    return slugify(s, allow_unicode=True) + '-' + str(int(time()))
 
 
 class Post(models.Model):
