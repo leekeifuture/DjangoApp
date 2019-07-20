@@ -40,6 +40,6 @@ class TagForm(forms.ModelForm):
 
         if Tag.objects.filter(slug__iexact=new_slug).count():
             raise ValidationError(
-                'Slug must be unique. We have "{0}" slug already'.format(new_slug))
+                'Slug must be unique. We have "%s" slug already' % new_slug)
 
         return new_slug
